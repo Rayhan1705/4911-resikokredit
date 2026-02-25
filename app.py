@@ -48,7 +48,7 @@ def user_input_features():
     # Input Lama Kerja
     person_emp_length = st.sidebar.number_input("Lama Bekerja (Tahun)", min_value=0, max_value=60, value=2, step=1)
 
-    # Asumsi: Seseorang minimal mulai bekerja umur 15 tahun (part-time dsb).
+    # Asumsi: Seseorang minimal mulai bekerja umur 15 tahun
     # Jadi Lama Kerja tidak boleh lebih besar dari (Usia - 15).
     is_valid_input = True
     if person_emp_length > (person_age - 15):
@@ -184,6 +184,7 @@ else:
     # Jika data tidak valid, tombol hilang dan muncul peringatan
 
     st.warning("⚠️ **PERHATIAN:** Mohon perbaiki data input di Sidebar. Lama bekerja tidak boleh melebihi usia nasabah (dikurangi usia wajar mulai bekerja).")
+
 
 
 
