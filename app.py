@@ -40,7 +40,7 @@ def user_input_features():
     st.sidebar.markdown("### 1. Data Demografi & Pekerjaan")
     
     # Input Usia
-    person_age = st.sidebar.number_input("Usia Nasabah (Tahun)", min_value=15, max_value=100, value=25)
+    person_age = st.sidebar.number_input("Usia Nasabah (Tahun)", min_value=18, max_value=100, value=25)
     
     # Input Pendapatan
     person_income = st.sidebar.number_input("Pendapatan Tahunan ($)", min_value=1000, max_value=10000000, value=50000, step=1000)
@@ -184,6 +184,7 @@ else:
     # Jika data tidak valid, tombol hilang dan muncul peringatan
 
     st.warning("⚠️ **PERHATIAN:** Mohon perbaiki data input di Sidebar. Lama bekerja tidak boleh melebihi usia nasabah (dikurangi usia wajar mulai bekerja).")
+
 
 
 
