@@ -26,7 +26,7 @@ def load_assets():
 model_xgb, model_rf, scaler, encoders = load_assets()
 
 # --- JUDUL & DESKRIPSI ---
-St.title("Hossain Wismaya Rayhan 22.11.4911")
+St.markdown("Hossain Wismaya Rayhan 22.11.4911")
 st.title("💰 Sistem Prediksi Risiko Kredit Nasabah")
 st.markdown("""
 Aplikasi ini menggunakan Machine Learning (**XGBoost & Random Forest**) untuk memprediksi apakah nasabah 
@@ -184,3 +184,4 @@ else:
     # Jika data tidak valid, tombol hilang dan muncul peringatan
 
     st.warning("⚠️ **PERHATIAN:** Mohon perbaiki data input di Sidebar. Lama bekerja tidak boleh melebihi usia nasabah (dikurangi usia wajar mulai bekerja).")
+
