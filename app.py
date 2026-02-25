@@ -32,11 +32,11 @@ Aplikasi ini menggunakan Machine Learning (**XGBoost & Random Forest**) untuk me
 berpotensi **Gagal Bayar (1)** atau **Lancar (0)**.
 """)
 
+st.sidebar.title("Hossain Wismaya Rayhan 22.11.4911")
 st.sidebar.header("🔧 Panel Input Data")
 
 # --- INPUT USER (SIDEBAR) ---
 def user_input_features():
-    st.sidebar.title("Hossain Wismaya Rayhan 22.11.4911")
     st.sidebar.markdown("### 1. Data Demografi & Pekerjaan")
     
     # Input Usia
@@ -184,6 +184,7 @@ else:
     # Jika data tidak valid, tombol hilang dan muncul peringatan
 
     st.warning("⚠️ **PERHATIAN:** Mohon perbaiki data input di Sidebar. Lama bekerja tidak boleh melebihi usia nasabah (dikurangi usia wajar mulai bekerja).")
+
 
 
 
